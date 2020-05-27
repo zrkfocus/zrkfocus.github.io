@@ -162,6 +162,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
 
 // import HelloWorld from '@/components/HelloWorld'
 // import RuleModal from '@/components/RuleModal'
@@ -171,6 +172,12 @@ Object.defineProperty(exports, "__esModule", {
 var jsbridge = weex.requireModule('jsbridge');
 exports.default = {
   name: 'App',
+  data: function data() {
+    return {
+      sss: ''
+    };
+  },
+
   components: {
     // HelloWorld
     // TaskModal
@@ -179,14 +186,11 @@ exports.default = {
     // CenterPosition,
     // PK
   },
-  data: function data() {
-    return {};
-  },
-
   methods: {
     showJsbridge: function showJsbridge() {
       alert(jsbridge);
       alert(1);
+      this.sss = 'ppppp';
     }
   }
 };
@@ -206,7 +210,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.showJsbridge
     }
-  }, [_vm._v("ssss")])])])
+  }, [_vm._v("ssss")])]), _c('div', [_c('text', [_vm._v(_vm._s(_vm.sss))])])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 
