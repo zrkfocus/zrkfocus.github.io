@@ -186,6 +186,7 @@ exports.default = {
   methods: {
     showJsbridge: function showJsbridge() {
       alert(jsbridge);
+      alert(1);
     }
   }
 };
