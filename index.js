@@ -169,7 +169,7 @@ Object.defineProperty(exports, "__esModule", {
 // import RankList from '@/components/RankList'
 // import CenterPosition from '@/components/CenterPosition'
 // import PK from '@/components/PK'
-var jsbridge = weex.requireModule('jsbridge');
+// const jsbridge = weex.requireModule('jsbridge')
 exports.default = {
   name: 'App',
   data: function data() {
@@ -188,8 +188,8 @@ exports.default = {
   },
   methods: {
     showJsbridge: function showJsbridge() {
-      alert(jsbridge);
-      alert(1);
+      // alert(jsbridge)
+      // alert(1)
       this.sss = 'ppppp';
     }
   }
@@ -210,7 +210,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.showJsbridge
     }
-  }, [_vm._v("ssss")])]), _c('div', [_c('text', [_vm._v(_vm._s(_vm.sss))])])])
+  }, [_vm._v("222")])]), _c('div', [_c('text', [_vm._v(_vm._s(_vm.sss))])])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 
