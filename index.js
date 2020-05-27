@@ -199,11 +199,14 @@ exports.default = {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["wrapper"]
-  }, [_c('div', {
+  }, [_c('div', [_c('text', {
+    staticStyle: {
+      fontSize: "40px"
+    },
     on: {
       "click": _vm.showJsbridge
     }
-  }, [_c('text', [_vm._v("ssss")])])])
+  }, [_vm._v("ssss")])])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 
