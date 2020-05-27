@@ -188,10 +188,14 @@ exports.default = {
   },
   methods: {
     showJsbridge: function showJsbridge() {
+      var _this = this;
+
       // alert(jsbridge)
       // alert(1)
       // this.sss = 'ppppp'
-      this.sss = JSON.stringify(jsbridge);
+      jsbridge.getClientInfo(function (res) {
+        _this.sss = JSON.stringify(res);
+      });
     }
   }
 };
@@ -211,7 +215,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.showJsbridge
     }
-  }, [_vm._v("333")])]), _c('div', [_c('text', [_vm._v(_vm._s(_vm.sss))])])])
+  }, [_vm._v("555")])]), _c('div', [_c('text', [_vm._v(_vm._s(_vm.sss))])])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 
